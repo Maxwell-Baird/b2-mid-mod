@@ -226,7 +226,7 @@
           1,
           null,
           null,
-          0,
+          1,
           null,
           0,
           null,
@@ -272,6 +272,52 @@
           null
         ]
       },
+      "/Users/maxwellbaird/turing/2module/b2-mid-mod/spec/models/park_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/maxwellbaird/turing/2module/b2-mid-mod/app/models/park.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/maxwellbaird/turing/2module/b2-mid-mod/spec/models/ride_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/maxwellbaird/turing/2module/b2-mid-mod/app/models/ride.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/maxwellbaird/turing/2module/b2-mid-mod/app/controllers/mechanics_controller.rb": {
         "lines": [
           1,
@@ -291,6 +337,6 @@
         ]
       }
     },
-    "timestamp": 1585928556
+    "timestamp": 1585929366
   }
 }
