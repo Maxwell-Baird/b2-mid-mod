@@ -9,11 +9,11 @@ RSpec.describe "As a visitor", type: :feature do
                                   experience: 13)
     visit "/mechanics"
 
-    within("mechanics-#{mechanic1.id}") do
+    within("#mechanic-#{mechanic1.id}") do
       expect(page).to have_content(mechanic1.name)
       expect(page).to have_content(mechanic1.experience)
     end
-    within("mechanics-#{mechanic2.id}") do
+    within("#mechanic-#{mechanic2.id}") do
       expect(page).to have_content(mechanic2.name)
       expect(page).to have_content(mechanic2.experience)
     end
