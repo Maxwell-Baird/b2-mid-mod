@@ -26,21 +26,38 @@ RSpec.describe "As a visitor", type: :feature do
 
   it "I can add a ride to the workload at '/mechanics/:id'" do
 
-    mechanic = Mechanic.create(name: "Bob McBob",
-                                  experience: 5)
+    mechanic1 = Mechanic.create(name: "Bob McBob",
+                               experience: 5)
+    mechanic2 = Mechanic.create(name: "Bob McBob",
+                                   experience: 5)
+
     park = Park.create(name: "Fun Land",
                        admissions: 20.00)
 
 
     park.rides.create(name: "Cheesy Dance",
-                      rating: 2)
+                      rating: 2,
+                      mechanic_id: mechanic2.id)
+
+    visit "/mechanics/#{mechanic1.id}"
+    expect(page).to have_content("Add a ride to workload:")
+    expect(page).to have_field(:ride_id)
+    fill_in :ride_id, with: park.rides.first.id
+    click_button "Submit"
+    expect(page).to have_content("Cheesy Dance")
+  end
+
+  it "I cannot add a nonexisting ride to the workload at '/mechanics/:id'" do
+
+    mechanic = Mechanic.create(name: "Bob McBob",
+                               experience: 5)
 
     visit "/mechanics/#{mechanic.id}"
     expect(page).to have_content("Add a ride to workload:")
-    expect(page).to have_field(:id)
-    fill_in :id, with: park.rides.first
+    expect(page).to have_field(:ride_id)
+    fill_in :ride_id, with: 1
     click_button "Submit"
-    expect(page).to have_content("Cheesy Dance")
+    expect(page).to have_content("Sorry, this ride does not exist")
   end
 
 end

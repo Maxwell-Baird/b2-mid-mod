@@ -9,7 +9,7 @@
   <% end %>
   <p>Add a ride to workload: </p>
   <%= form_tag "/mechanics/#{@mechanic.id}", method: :patch do %>
-    <%= text_field_tag :id%><br/>
+    <%= text_field_tag :ride_id%><br/>
     <%= submit_tag "Submit" %>
   <% end %>
 </main>
