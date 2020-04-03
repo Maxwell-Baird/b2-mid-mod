@@ -18,7 +18,7 @@ RSpec.describe "As a visitor", type: :feature do
     expect(page).to have_content('1. Slide of DOOOM')
     expect(page).to have_content('2. Maze of Corn')
     expect(page).to have_content('3. The Upside Down')
-    expect(page).to have_content('Average Thrill Rating of Rides: 6/10')
+    expect(page).to have_content('Average Thrill Rating of Rides: 6.0/10')
 
   end
 end
