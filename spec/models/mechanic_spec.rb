@@ -7,4 +7,7 @@ describe Mechanic, type: :model do
     it { should validate_presence_of :experience }
   end
 
+  describe 'relationships' do
+    it { should have_many :rides }
+  end
 end

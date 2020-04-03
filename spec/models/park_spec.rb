@@ -15,13 +15,18 @@ describe Park, type: :model do
     it 'averages the ratings of rides' do
       park = Park.create(name: "Fun Land",
                          admissions: 20.00)
+      mechanic = Mechanic.create(name: "Bob McBob",
+                                 experience: 5)
 
       park.rides.create(name: "Slide of DOOOM",
-                        rating: 5)
+                        rating: 5,
+                        mechanic_id: mechanic.id)
       park.rides.create(name: "Maze of Corn",
-                        rating: 5)
+                        rating: 5,
+                        mechanic_id: mechanic.id)
       park.rides.create(name: "The Upside Down",
-                        rating: 4)
+                        rating: 4,
+                        mechanic_id: mechanic.id)
       expect(park.average).to eq(4.67)
     end
   end

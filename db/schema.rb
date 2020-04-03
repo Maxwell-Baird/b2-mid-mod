@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200403155740) do
+ActiveRecord::Schema.define(version: 20200403163030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,8 +29,11 @@ ActiveRecord::Schema.define(version: 20200403155740) do
     t.string "name"
     t.integer "rating"
     t.bigint "park_id"
+    t.bigint "mechanic_id"
+    t.index ["mechanic_id"], name: "index_rides_on_mechanic_id"
     t.index ["park_id"], name: "index_rides_on_park_id"
   end
 
+  add_foreign_key "rides", "mechanics"
   add_foreign_key "rides", "parks"
 end
