@@ -14,7 +14,7 @@
       <img src="./assets/0.11.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-04-03T09:28:13-06:00">2020-04-03T09:28:13-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-04-03T09:30:41-06:00">2020-04-03T09:30:41-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>18</b> files in total.
+    <b>16</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>48</b> relevant lines,
-    <span class="green"><b>48</b> lines covered</span> and
+    <b>43</b> relevant lines,
+    <span class="green"><b>43</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -68,28 +68,6 @@
       </tr>
     </thead>
     <tbody>
-      
-        <tr class="t-file">
-          <td class="strong t-file__name"><a href="#021a8076bfe11363f716c45b060533f9d32e3195" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-          <td class="green strong t-file__coverage">100.0 %</td>
-          <td>3</td>
-          <td>2</td>
-          <td>2</td>
-          <td>0</td>
-          <td>1.0</td>
-          
-        </tr>
-      
-        <tr class="t-file">
-          <td class="strong t-file__name"><a href="#95b5ca12ed64cc6b8b59932d365ae36fbb289de7" class="src_link" title="app/controllers/mechanics_controller.rb">app/controllers/mechanics_controller.rb</a></td>
-          <td class="green strong t-file__coverage">100.0 %</td>
-          <td>7</td>
-          <td>3</td>
-          <td>3</td>
-          <td>0</td>
-          <td>1.0</td>
-          
-        </tr>
       
         <tr class="t-file">
           <td class="strong t-file__name"><a href="#727f7e2cc0c286906546864b3e2ce75495276323" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
@@ -282,178 +260,6 @@
       </div>
 
       <div class="source_files">
-      
-        <div class="source_table" id="021a8076bfe11363f716c45b060533f9d32e3195">
-  <div class="header">
-    <h3>app/controllers/application_controller.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  protect_from_forgery with: :exception</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="95b5ca12ed64cc6b8b59932d365ae36fbb289de7">
-  <div class="header">
-    <h3>app/controllers/mechanics_controller.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class MechanicsController &lt; ApplicationController</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def index</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    @mechanics = Mechanic.all</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
       
         <div class="source_table" id="727f7e2cc0c286906546864b3e2ce75495276323">
   <div class="header">
