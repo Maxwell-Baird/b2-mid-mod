@@ -20,4 +20,4 @@ park.rides.create(name: "The Upside Down",
                   rating: 6,
                   mechanic_id: mechanic1.id)
 mechanic2 = Mechanic.create(name: "Jane Doe",
-                           experience: 5)
+                           experience: 13)

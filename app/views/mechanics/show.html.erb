@@ -4,10 +4,10 @@
   <p>Current rides they’re working on: </p>
   <% @mechanic.rides.each do |ride| %>
     <article id="ride-<%=ride.id %>">
-      <p><%= ride.name %></p><br/>
+      <p><%= ride.name %></p>
     </article>
   <% end %>
-  <p>Add a ride to workload: </p>
+  <h3>Add a ride to workload: </h3>
   <%= form_tag "/mechanics/#{@mechanic.id}", method: :patch do %>
     <%= text_field_tag :ride_id%><br/>
     <%= submit_tag "Submit" %>
