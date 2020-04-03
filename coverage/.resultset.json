@@ -228,11 +228,11 @@
           null,
           1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           0,
           0,
@@ -294,6 +294,7 @@
         "lines": [
           1,
           1,
+          1,
           null
         ]
       },
@@ -313,6 +314,7 @@
       },
       "/Users/maxwellbaird/turing/2module/b2-mid-mod/app/models/ride.rb": {
         "lines": [
+          1,
           1,
           1,
           null
@@ -337,6 +339,6 @@
         ]
       }
     },
-    "timestamp": 1585929366
+    "timestamp": 1585929556
   }
 }

@@ -7,7 +7,7 @@ RSpec.describe "As a visitor", type: :feature do
                        admissions: 20.00)
 
     park.rides.create(name: "Slide of DOOOM",
-                      thrill: 2)
+                      rating: 2)
     park.rides.create(name: "Maze of Corn",
                       rating: 10)
     park.rides.create(name: "The Upside Down",
@@ -19,6 +19,6 @@ RSpec.describe "As a visitor", type: :feature do
     expect(page).to have_content('2. Maze of Corn')
     expect(page).to have_content('3. The Upside Down')
     expect(page).to have_content('Average Thrill Rating of Rides: 6/10')
-  
+
   end
 end
